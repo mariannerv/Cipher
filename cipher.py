@@ -8,7 +8,7 @@ def idx2char(i):
 
 def encodeCypher1(msg):
     
-    alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     lista = [char for char in msg]
     
@@ -19,7 +19,7 @@ def encodeCypher1(msg):
     
 def decodeCypher1(msg):
     
-    alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     lista = [char for char in msg]
     
@@ -35,8 +35,7 @@ def decodeCypher1(msg):
 
 
 def auxiliar(msg):
-    alfabeto = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-
+    alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     lista = [char for char in msg]
     
     for i in range(len(lista)):
@@ -49,8 +48,7 @@ def auxiliar(msg):
     return ''.join(lista)
 
 def tabulaKey():
-    res = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ']
-
+    res = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     for i in range(25):
         res.append(auxiliar(res[i]))
 
