@@ -175,8 +175,3 @@ def decodeCypher4(key,msg):
     return ''.join(res)
 
 #print(decodeCypher4('LTI', '310201203024')
-
-def encodeCypher5(msg):
-    
-
-    return ''
